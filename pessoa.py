@@ -13,7 +13,9 @@ class Pessoa:
     # apresenta listagem dos atributos
     def apresentar(self):
         # primeira opção
-        print(f'Nome: {self.nome}\nData: {self.data_nascimento}\nCodigo: {self.codigo} ')
+        print(f'Nome: {self.nome}\n'
+              f'Data: {self.data_nascimento}\n'
+              f'Codigo: {self.codigo} ')
 
         if self.estudando:
             print(f'Está Estudando.')
@@ -56,12 +58,6 @@ p1.apresentar()
 p1.trabalhar()
 p1.estudar()
 print("-" * 20)
-
-
-# p2 = Pessoa("Julia", "10/02/2002", "afskfe")
-# p2.apresentar()
-# p1.trabalhar()
-# p2.estudar()
 
 
 class Bebe(Pessoa):
